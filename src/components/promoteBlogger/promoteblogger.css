@@ -1,0 +1,31 @@
+.promote-blogger {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  h2, h3 {
+    color: #7451f8;
+  }
+  
+  select, button {
+    background-color: #7451f8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .selected-blogger {
+    margin-top: 20px;
+    border: 1px solid #7451f8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,103 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  z-index: 1;
+
+  .navbarInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: 415px) {
+      justify-content: space-around;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .icon {
+        color: #00a1df;
+        font-size: 40px;
+      }
+
+      .title {
+        color: #0033a0;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .burgerMenu {
+        display: none;
+        @media (max-width: 415px) {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+        }
+
+        .burgerMenuItem {
+          width: 50px;
+          height: 1px;
+          background-color: black;
+          color: black;
+        }
+      }
+      .gitHubIcon {
+        @media (max-width: 415px) {
+          display: none;
+        }
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+      }
+
+      .loginButton {
+        padding: 5px 10px;
+        border: none;
+        font-size: 17px;
+        color: gray;
+        border-radius: 5px;
+        background: none;
+        cursor: pointer;
+        @media (max-width: 415px) {
+          display: none;
+        }
+
+        &:hover {
+          color: #00a1df;
+          background-color: rgba(236, 232, 255, 0.63);
+        }
+      }
+
+      .signupButton {
+        border: 1px solid #0033a0;
+        border-radius: 5px;
+        background: none;
+        padding: 5px 10px;
+        font-size: 17px;
+        color: #0033a0;
+        font-weight: 500;
+        cursor: pointer;
+        @media (max-width: 415px) {
+          display: none;
+        }
+
+        &:hover {
+          background-color: #00a1df;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/* Main container */
+.add-blogger {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Page title */
+.add-blogger h2 {
+  font-size: 2rem;
+  color: #0033a0;
+  margin-bottom: 1rem;
+}
+
+/* Select community label */
+.add-blogger label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #0033a0;
+}
+
+/* Select community dropdown */
+.add-blogger select {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 2px solid #0033a0;
+  border-radius: 5px;
+  color: #0033a0;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+/* Blogger lists */
+.add-blogger h3 {
+  font-size: 1.5rem;
+  color: #0033a0;
+  margin-bottom: 0.5rem;
+}
+
+.add-blogger ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.add-blogger .blogger-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #0033a0;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.add-blogger button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0033a0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-blogger button:hover {
+  background-color: white;
+  color: #0033a0;
+}
+
+/* Success message */
+.add-blogger p {
+  font-size: 1.2rem;
+  color: #0033a0;
+  margin-top: 1rem;
+}

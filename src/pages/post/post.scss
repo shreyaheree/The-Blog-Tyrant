@@ -1,0 +1,224 @@
+.postWrapper {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+
+  .postInner {
+    flex-basis: 75%;
+    margin: 0 20px 20px 0;
+
+    @media (max-width: 415px) {
+      flex-basis: 100%;
+      margin: 20px 0;
+    }
+    @media (max-width: 1100px) {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+    .postDescription {
+      background-color: white;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      width: 100%;
+      position: relative;
+
+      .imgLoader {
+        width: inherit;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        height: 300px;
+        background-color: lightgrey;
+        @media (max-width: 415px) {
+          height: 150px;
+        }
+      }
+
+      .back {
+        margin: 20px 0 20px 50px;
+        background: none;
+        border: 1px solid #7451f8;
+        padding: 0 10px 0 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 18px;
+        transition: 0.2s;
+        color: #0033a0;
+        @media (max-width: 415px) {
+          margin: 5px 0 10px 10px;
+          padding: 0 5px 0 5px;
+          font-size: 12px;
+        }
+
+        &:hover {
+          background-color: rgba(236, 232, 255, 0.63);
+        }
+
+        .backIcon {
+          font-size: 30px;
+          @media (max-width: 415px) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      img {
+        width: inherit;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        height: 300px;
+        object-fit: cover;
+        @media (max-width: 415px) {
+          height: 150px;
+        }
+      }
+
+      .postInfo {
+        padding: 0 50px 20px 50px;
+        @media (max-width: 415px) {
+          padding: 10px;
+        }
+
+        .postInfoWrapper {
+          display: flex;
+          justify-content: space-between;
+          .author {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            @media (max-width: 415px) {
+              margin-bottom: 5px;
+            }
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+
+            .authorDetails {
+              display: flex;
+              flex-direction: column;
+
+              .name {
+                font-size: 14px;
+                font-weight: 600;
+              }
+
+              .date {
+                font-size: 13px;
+                color: #7c7b7b;
+              }
+            }
+          }
+        }
+
+        h1 {
+          word-break: break-word;
+          font-size: 40px;
+          font-weight: 800;
+          @media (max-width: 415px) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .postText {
+        padding: 0 50px 20px 50px;
+        @media (max-width: 415px) {
+          padding: 10px;
+          span {
+            display: block;
+          }
+        }
+        ul {
+          li {
+            margin-left: 17px;
+          }
+        }
+      }
+
+      .postActionsInfo {
+        padding: 0 50px 20px 50px;
+        display: flex;
+        gap: 10px;
+        @media (max-width: 415px) {
+          padding: 10px;
+        }
+
+        .postLike {
+          display: flex;
+          align-items: center;
+          gap: 1px;
+          span {
+            font-size: 15px;
+            @media (max-width: 415px) {
+            }
+          }
+
+          .liked {
+            color: red;
+          }
+
+          .postActionsIcon {
+            padding: 5px;
+            @media (max-width: 415px) {
+              font-size: 15px;
+            }
+
+            &.like {
+              cursor: pointer;
+              border-radius: 50%;
+              transition: 0.1s;
+
+              &:hover {
+                background-color: rgba(255, 0, 0, 0.18);
+                color: red;
+              }
+            }
+          }
+        }
+      }
+      .postPageTags {
+        padding: 0 50px 20px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+
+    .postComments {
+      margin: 20px 0 0 0;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      padding: 20px 50px 50px 50px;
+      @media (max-width: 415px) {
+        padding: 10px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        @media (max-width: 415px) {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .commentsList {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .noComments {
+          font-size: 20px;
+          color: lightgray;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

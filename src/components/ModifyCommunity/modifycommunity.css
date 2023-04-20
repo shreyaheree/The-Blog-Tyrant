@@ -1,0 +1,44 @@
+body {
+  background-color: #ffffff;
+}
+
+h2 {
+  color: #0033a0;
+}
+
+label {
+  color: #0033a0;
+  display: block;
+  margin-top: 1rem;
+}
+
+select {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid #0033a0;
+  border-radius: 0.5rem;
+}
+
+input,
+textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid #0033a0;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #0033a0;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+p {
+  color: #0033a0;
+  margin-top: 1rem;
+}

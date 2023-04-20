@@ -1,0 +1,29 @@
+.sidebar {
+  position: fixed;
+  @media (max-width: 415px) {
+    display: none;
+  }
+  .menu {
+    margin-bottom: 50px;
+    h4 {
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      cursor: pointer;
+      padding: 5px 0 5px 5px;
+      border-radius: 7px;
+
+      &:hover {
+        color: #00a1df;
+      }
+    }
+    .sidebarItem {
+      background-color: rgba(116, 81, 248, 0.42);
+    }
+  }
+}

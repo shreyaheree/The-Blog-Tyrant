@@ -1,0 +1,11 @@
+.userPostList{
+    padding: 0 80px 0 80px;
+    @media (max-width: 415px) {
+      padding: 0 10px 0 10px;
+    }
+  
+    .noPostsCreatedByUser{
+      color: lightgrey;
+      text-align: center;
+    }
+  }
